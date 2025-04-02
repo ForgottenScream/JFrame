@@ -25,6 +25,9 @@ public class MyLayeredPane extends TemplateFrame {
 
 		JLayeredPane layeredPane = new JLayeredPane();
 		layeredPane.setBounds(0, 0, 500, 500);
+		layeredPane.add(label1);
+		layeredPane.add(label2);
+		layeredPane.add(label3);
 
 		this.add(layeredPane);
 
