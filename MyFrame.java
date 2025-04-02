@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class MyFrame extends JFrame {
@@ -20,22 +21,34 @@ public class MyFrame extends JFrame {
 		this.setResizable(false); //prevent frame from being resized - cant be put to fullscreen either so be careful
 
 		//Image Icon for Window
-		ImageIcon icon = new ImageIcon("assets/tux.png"); //creates an ImageIcon
-		this.setIconImage(icon.getImage()); //change icon of frame
+//		ImageIcon icon = new ImageIcon("assets/tux.png"); //creates an ImageIcon
+//		this.setIconImage(icon.getImage()); //change icon of frame
 
 		//Customize appearance
 		this.getContentPane().setBackground(new Color(19, 115, 184)); //change background color (color name, rgb, hex value)
 
-		//Label Time
+		//Border
+		Border border = BorderFactory.createLineBorder(Color.BLACK,3); //creates border with parameters
+
+		// Label Functionality
 		JLabel label = new JLabel();
 		label.setText("Hello World"); //setting the text for the label
-		label.setIcon(new ImageIcon("assets/health.png"));
+		label.setIcon(new ImageIcon("assets/tux.png"));
 		label.setVerticalAlignment(JLabel.BOTTOM); // set text LEFT,CENTER,RIGHT of image icon
 		label.setHorizontalAlignment(JLabel.CENTER);
 		label.setVerticalTextPosition(SwingConstants.TOP); // set text TOP,CENTER,BOTTOM of image icon
 		label.setHorizontalTextPosition(SwingConstants.CENTER);
+		label.setForeground(new Color(0x00FF00)); //set font colour of text
+		label.setFont(new Font("Serif", Font.BOLD, 20)); // set font of text
+		label.setIconTextGap(10); //set gap of text to image
+		label.setBackground(new Color(133, 99, 197));
+		label.setOpaque(true); //to display background color set this to true
+		label.setBorder(border); // sets the border
+		label.setBounds(100, 100, 850, 850);
+
 
 		this.add(label);
+		this.setLayout(null); //when not using layout manager can put to null to define as you want
 		this.setVisible(true); // makes frame visible
 	}
 }
