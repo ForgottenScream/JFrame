@@ -5,5 +5,6 @@ public class Main {
 //		MyButton button = new MyButton(); //basic buttons
 //		MyBorders myBorders = new MyBorders(); // using BorderLayout
 //		MyFlow myFlow = new MyFlow(); // using FlowLayout
+//		MyGrid grid = new MyGrid(); // basics of grid layout
 	}
 }
