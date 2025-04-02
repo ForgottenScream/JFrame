@@ -26,15 +26,14 @@ public class MyFrame extends JFrame {
 		//Customize appearance
 		this.getContentPane().setBackground(new Color(19, 115, 184)); //change background color (color name, rgb, hex value)
 
-		//Adding image
-		ImageIcon healthImage = new ImageIcon ("assets/health.png");
-
 		//Label Time
 		JLabel label = new JLabel();
 		label.setText("Hello World"); //setting the text for the label
-		label.setIcon(healthImage);
-		label.setHorizontalAlignment(JLabel.CENTER); // set text LEFT,CENTER,RIGHT of image icon
-		label.setVerticalAlignment(JLabel.TOP); // set text TOP,CENTER,BOTTOM of image icon
+		label.setIcon(new ImageIcon("assets/health.png"));
+		label.setVerticalAlignment(JLabel.BOTTOM); // set text LEFT,CENTER,RIGHT of image icon
+		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setVerticalTextPosition(SwingConstants.TOP); // set text TOP,CENTER,BOTTOM of image icon
+		label.setHorizontalTextPosition(SwingConstants.CENTER);
 
 		this.add(label);
 		this.setVisible(true); // makes frame visible
