@@ -1,11 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MyPanel extends JFrame {
+public class MyPanel extends TemplateFrame {
 	public MyPanel() {
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setLayout(null);
-		this.setSize(750, 750);
 
 		ImageIcon icon = new ImageIcon("assets/tux.png", "tux penguin");
 
@@ -33,9 +31,6 @@ public class MyPanel extends JFrame {
 
 		this.add(bluePanel);
 		this.add(greenPanel);
-		this.setVisible(true);
 
-		//flow layouts - components that are added to this manager will be
-		// stuck to the top. once first row is filled it goes to second and so on
 	}
 }

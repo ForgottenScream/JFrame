@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 // JButton  = a button that performs an action when clicked on
-public class MyButton extends JFrame { //implements ActionListener { (trying lambda expression)
+public class MyButton extends TemplateFrame { //implements ActionListener { (trying lambda expression)
 	private JButton button;
 	private JLabel label;
 
@@ -35,10 +35,7 @@ public class MyButton extends JFrame { //implements ActionListener { (trying lam
 //		button.setEnabled(false); //disables button
 
 
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(null);
-		this.setSize(500, 500);
-		this.setVisible(true);
 		this.add(button);
 		this.add(label);
 	}

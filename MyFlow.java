@@ -1,15 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MyFlow extends JFrame {
+public class MyFlow extends TemplateFrame {
 
 	// FlowLayout = places components in a row, sized at their preferred size.
 	//              If the horizontal space in the container is too small,
 	//              the FlowLayout class uses the next available row.
 
 	public MyFlow() {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(500, 500);
 		this.setLayout(new FlowLayout(FlowLayout.LEADING, 10, 10));
 
 		JPanel panel = new JPanel();
@@ -29,6 +27,5 @@ public class MyFlow extends JFrame {
 
 
 		this.add(panel);
-		this.setVisible(true);
 	}
 }

@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 //useful for delegating components to borders i.e. north border for title etc
-public class MyBorders extends JFrame {
+public class MyBorders extends TemplateFrame {
 	public MyBorders() {
 		//Layout Manager = Defines the natural layout for components within a container
 
@@ -11,10 +11,7 @@ public class MyBorders extends JFrame {
 		//Border Layout = Places components in 5 areas: NORTH, SOUTH, EAST, WEST, CENTER
 		//                All extra space is placed in the center area
 
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(500, 500);
 		this.setLayout(new BorderLayout(10,10));
-		this.setVisible(true);
 
 		// create the panels
 		JPanel panel1 = new JPanel();
