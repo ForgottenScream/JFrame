@@ -12,6 +12,9 @@ public class MyFrame extends JFrame {
 		//JFrame.DO_NOTHING_ON_CLOSE - does as it says on tin, don't use that
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit out of application
 
+		//Window Position
+		this.setLocationRelativeTo(null); //centers the window
+
 		//Size of Window
 		this.setSize(800, 600); // sets the x-dimension and y-dimension of frame
 		this.setResizable(false); //prevent frame from being resized - cant be put to fullscreen either so be careful
@@ -23,18 +26,17 @@ public class MyFrame extends JFrame {
 		//Customize appearance
 		this.getContentPane().setBackground(new Color(19, 115, 184)); //change background color (color name, rgb, hex value)
 
+		//Adding image
+		ImageIcon healthImage = new ImageIcon ("assets/health.png");
+
 		//Label Time
 		JLabel label = new JLabel();
-//		JLabel label1 = new JLabel("Hello World"); //one way to create a label
 		label.setText("Hello World"); //setting the text for the label
-		this.add(label); // another way to create a label
+		label.setIcon(healthImage);
+		label.setHorizontalAlignment(JLabel.CENTER); // set text LEFT,CENTER,RIGHT of image icon
+		label.setVerticalAlignment(JLabel.TOP); // set text TOP,CENTER,BOTTOM of image icon
 
-		//Background Image
-		ImageIcon image = new ImageIcon("assets/Health-PNG-image.png");
-		label.setIcon(image);
-
-
-
+		this.add(label);
 		this.setVisible(true); // makes frame visible
 	}
 }
