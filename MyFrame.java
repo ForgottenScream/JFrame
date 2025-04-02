@@ -17,7 +17,7 @@ public class MyFrame extends JFrame {
 		this.setLocationRelativeTo(null); //centers the window
 
 		//Size of Window
-		this.setSize(800, 600); // sets the x-dimension and y-dimension of frame
+//		this.setSize(800, 600); // sets the x-dimension and y-dimension of frame
 		this.setResizable(false); //prevent frame from being resized - cant be put to fullscreen either so be careful
 
 		//Image Icon for Window
@@ -44,11 +44,12 @@ public class MyFrame extends JFrame {
 		label.setBackground(new Color(133, 99, 197));
 		label.setOpaque(true); //to display background color set this to true
 		label.setBorder(border); // sets the border
-		label.setBounds(100, 100, 850, 850);
+//		label.setBounds(100, 100, 850, 850); // set x,y position within frame as well as dimensions
 
 
 		this.add(label);
-		this.setLayout(null); //when not using layout manager can put to null to define as you want
+//		this.setLayout(null); //when not using layout manager can put to null to define as you want
+		this.pack(); // resizes the size of the frame to fit all components
 		this.setVisible(true); // makes frame visible
 	}
 }
