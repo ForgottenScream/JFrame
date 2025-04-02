@@ -17,12 +17,21 @@ public class MyFrame extends JFrame {
 		this.setResizable(false); //prevent frame from being resized - cant be put to fullscreen either so be careful
 
 		//Image Icon for Window
-		ImageIcon icon = new ImageIcon("tux.png"); //creates an ImageIcon
+		ImageIcon icon = new ImageIcon("assets/tux.png"); //creates an ImageIcon
 		this.setIconImage(icon.getImage()); //change icon of frame
 
 		//Customize appearance
 		this.getContentPane().setBackground(new Color(19, 115, 184)); //change background color (color name, rgb, hex value)
 
+		//Label Time
+		JLabel label = new JLabel();
+//		JLabel label1 = new JLabel("Hello World"); //one way to create a label
+		label.setText("Hello World"); //setting the text for the label
+		this.add(label); // another way to create a label
+
+		//Background Image
+		ImageIcon image = new ImageIcon("assets/Health-PNG-image.png");
+		label.setIcon(image);
 
 
 
