@@ -6,6 +6,7 @@ public class Main {
 //		MyBorders myBorders = new MyBorders(); // using BorderLayout
 //		MyFlow myFlow = new MyFlow(); // using FlowLayout
 //		MyGrid grid = new MyGrid(); // basics of grid layout
-		MyLayeredPane myLayeredPane = new MyLayeredPane();
+//		MyLayeredPane myLayeredPane = new MyLayeredPane(); //basics of pane layering
+		OpenNewWindow openNewWindow = new OpenNewWindow(); //opens MyFrame when clicking button
 	}
 }
