@@ -3,11 +3,13 @@ import java.awt.*;
 
 // Visual aid to let the user know that an operation is processing
 public class MyProgressBar extends TemplateFrame{
-	JFrame frame = new JFrame();
 	JProgressBar bar = new JProgressBar(0,100);
+	JLabel label = new JLabel("Health:");
 
 	public MyProgressBar() {
 		this.setLayout(null);
+		bar.add(label);
+		label.setFont(new Font("Arial", Font.PLAIN, 20));
 
 		bar.setValue(0); //sets initial value
 		bar.setBounds(0, 0, 400, 50);
@@ -16,7 +18,9 @@ public class MyProgressBar extends TemplateFrame{
 		bar.setForeground(Color.RED);
 		bar.setBackground(Color.BLACK);
 
+		this.add(label);
 		this.add(bar);
+		this.pack();
 		fill();
 	}
 	public void fill() {
