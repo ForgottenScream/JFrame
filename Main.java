@@ -14,6 +14,7 @@ public class Main {
 //		new MyRadioButton(); //useful for action listener
 //		new MyComboBox(); //useful for project?
 //		new MySlider(); //created thermometer with it, nice
-		new MyProgressBar();
+//		new MyProgressBar(); //created an HP bar.
+		new MyMenuBar();
 	}
 }
