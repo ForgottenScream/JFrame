@@ -8,6 +8,7 @@ public class Main {
 //		MyGrid grid = new MyGrid(); // basics of grid layout
 //		MyLayeredPane myLayeredPane = new MyLayeredPane(); //basics of pane layering
 //		OpenNewWindow openNewWindow = new OpenNewWindow(); //opens MyFrame when clicking button
-		MyDialogBox myDialogBox = new MyDialogBox();
+//		MyDialogBox myDialogBox = new MyDialogBox(); // useful stuff for feedback here
+//		MyTextField myTextField = new MyTextField(); // key for receiving info from user
 	}
 }
