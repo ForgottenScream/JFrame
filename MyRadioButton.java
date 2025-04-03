@@ -32,14 +32,19 @@ public class MyRadioButton extends TemplateFrame implements ActionListener {
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() == pizzaButton) {
-			System.out.println("You ordered a pizza!");
-		}
-		else if(e.getSource() == cheeseburgerButton) {
-			System.out.println("You ordered a cheeseburger!");
-		}
-		else if(e.getSource() == hotdogButton) {
-			System.out.println("You ordered a hotdog!");
+//		if(e.getSource() == pizzaButton) {
+//			System.out.println("You ordered a pizza!");
+//		}
+//		else if(e.getSource() == cheeseburgerButton) {
+//			System.out.println("You ordered a cheeseburger!");
+//		}
+//		else if(e.getSource() == hotdogButton) {
+//			System.out.println("You ordered a hotdog!");
+//		}
+		switch(e.getActionCommand()) { //better since it doesn't identify the specific component which is better in large scale projects
+			case "Pizza" -> System.out.println("You ordered a pizza!");
+			case "Cheeseburger" -> System.out.println("You ordered a cheeseburger!");
+			case "Hotdog" -> System.out.println("You ordered a hotdog!");
 		}
 	}
 }
