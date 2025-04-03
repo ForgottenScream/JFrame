@@ -1,18 +1,19 @@
 public class Main {
 	public static void main(String[] args) {
-//		MyFrame myFrame = new MyFrame(); //very basics
-//		MyPanel panel = new MyPanel(); //looking at JPanels now
-//		MyButton button = new MyButton(); //basic buttons
-//		MyBorders myBorders = new MyBorders(); // using BorderLayout
-//		MyFlow myFlow = new MyFlow(); // using FlowLayout
-//		MyGrid grid = new MyGrid(); // basics of grid layout
-//		MyLayeredPane myLayeredPane = new MyLayeredPane(); //basics of pane layering
-//		OpenNewWindow openNewWindow = new OpenNewWindow(); //opens MyFrame when clicking button
-//		MyDialogBox myDialogBox = new MyDialogBox(); // useful stuff for feedback here
-//		MyTextField myTextField = new MyTextField(); // key for receiving info from user
-//		MyCheckBox checkBox = new MyCheckBox(); // simple checkbox stuff
-//		MyRadioButton radioButton = new MyRadioButton(); //useful for actionlistener
-//		MyComboBox myComboBox = new MyComboBox(); //useful for project?
-		MySlider mySlider = new MySlider();
+//		new MyFrame(); //very basics
+//		new MyPanel(); //looking at JPanels now
+//		new MyButton(); //basic buttons
+//		new MyBorders(); // using BorderLayout
+//		new MyFlow(); // using FlowLayout
+//		new MyGrid(); // basics of grid layout
+//		new MyLayeredPane(); //basics of pane layering
+//		new OpenNewWindow(); //opens MyFrame when clicking button
+//		new MyDialogBox(); // useful stuff for feedback here
+//		new MyTextField(); // key for receiving info from user
+//		new MyCheckBox(); // simple checkbox stuff
+//		new MyRadioButton(); //useful for action listener
+//		new MyComboBox(); //useful for project?
+//		new MySlider(); //created thermometer with it, nice
+		new MyProgressBar();
 	}
 }
