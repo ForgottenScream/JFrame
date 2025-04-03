@@ -11,6 +11,7 @@ public class Main {
 //		MyDialogBox myDialogBox = new MyDialogBox(); // useful stuff for feedback here
 //		MyTextField myTextField = new MyTextField(); // key for receiving info from user
 //		MyCheckBox checkBox = new MyCheckBox(); // simple checkbox stuff
-		MyRadioButton radioButton = new MyRadioButton();
+//		MyRadioButton radioButton = new MyRadioButton(); //useful for actionlistener
+//		MyComboBox myComboBox = new MyComboBox(); //useful for project?
 	}
 }
