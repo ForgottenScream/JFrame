@@ -13,5 +13,6 @@ public class Main {
 //		MyCheckBox checkBox = new MyCheckBox(); // simple checkbox stuff
 //		MyRadioButton radioButton = new MyRadioButton(); //useful for actionlistener
 //		MyComboBox myComboBox = new MyComboBox(); //useful for project?
+		MySlider mySlider = new MySlider();
 	}
 }
