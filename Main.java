@@ -15,6 +15,6 @@ public class Main {
 //		new MyComboBox(); //useful for project?
 //		new MySlider(); //created thermometer with it, nice
 //		new MyProgressBar(); //created an HP bar.
-		new MyMenuBar();
+//		new MyMenuBar(); //basic menu stuff but maybe not applicable to my project
 	}
 }
