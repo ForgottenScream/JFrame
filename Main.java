@@ -10,5 +10,6 @@ public class Main {
 //		OpenNewWindow openNewWindow = new OpenNewWindow(); //opens MyFrame when clicking button
 //		MyDialogBox myDialogBox = new MyDialogBox(); // useful stuff for feedback here
 //		MyTextField myTextField = new MyTextField(); // key for receiving info from user
+		MyCheckBox checkBox = new MyCheckBox();
 	}
 }
