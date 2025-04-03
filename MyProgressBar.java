@@ -7,12 +7,11 @@ public class MyProgressBar extends TemplateFrame{
 	JLabel label = new JLabel("Health:");
 
 	public MyProgressBar() {
-		this.setLayout(null);
+		this.setLayout(new FlowLayout());
 		bar.add(label);
 		label.setFont(new Font("Arial", Font.PLAIN, 20));
 
 		bar.setValue(0); //sets initial value
-		bar.setBounds(0, 0, 400, 50);
 		bar.setStringPainted(true); //adds percentage to bar, changes in real time
 		bar.setFont(new Font("Arial", Font.BOLD, 20));
 		bar.setForeground(Color.RED);
